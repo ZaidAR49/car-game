@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2249D2E-F735-484D-B169-E84A5D35EC65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>moving_car___C__project</RootNamespace>
+    <AssemblyName>moving car _ C# project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fname.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fname.designer.cs">
+      <DependentUpon>Fname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HOME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOME.designer.cs">
+      <DependentUpon>HOME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level1.Designer.cs">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level2.designer.cs">
+      <DependentUpon>level2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level3.Designer.cs">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseLevel.designer.cs">
+      <DependentUpon>ChooseLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NGAME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NGAME.designer.cs">
+      <DependentUpon>NGAME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="playerinfo.cs" />
+    <Compile Include="Player_Play.cs" />
+    <Compile Include="profclass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fname.resx">
+      <DependentUpon>Fname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HOME.resx">
+      <DependentUpon>HOME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level1.resx">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level2.resx">
+      <DependentUpon>level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level3.resx">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseLevel.resx">
+      <DependentUpon>ChooseLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NGAME.resx">
+      <DependentUpon>NGAME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\street hor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\street.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sport-car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sport-car %281%29Y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sport-car %281%29Y1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crowd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crowd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nitrous-oxide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finish line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racing-car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racingRed-car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racing-car1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LracingRed-car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DracingRed-car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LracingRed-car1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upracingRed-car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racing-carL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racing-carD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racing-carU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tires.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiresV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiresVi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiresViHH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racing-carD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-full-screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previousR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloading %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-full-screen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previousR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloading %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rat_D.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rat_L.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rat_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rat_U.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rat2_D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rat2_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rat2_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rat2_U.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LracingRed-car2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DracingRed-car1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upracingRed-car1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racingRed-car1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racing-car11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racing-carU1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racing-carL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racing-carD11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finish line1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finish2 line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\street hor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\street1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\street hor2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\street2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\street hor3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\street3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time outpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_370539127_zcUHQTNUaGbyEMeaexk5UiuPT0NLgjeW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presentation1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad-face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finish-flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %281%291.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
