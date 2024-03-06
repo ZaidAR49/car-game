@@ -20,6 +20,7 @@ namespace moving_car___C__project
         public static bool Computer_playing = false;
         public static  string obj="",p1,p2,g1="fmale", g2="fmale";
         public static int L, S, M, s1, s2, w1, w2,age1,age2;
+        public static int y;
         
         public static void change_Image(string o, PictureBox YR, PictureBox YL, PictureBox YU, PictureBox YD, PictureBox RR, PictureBox RL, PictureBox RU, PictureBox RD)
         {
